@@ -1,0 +1,31 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+p {
+  text-align: justify;
+}
+
+#header {
+  background-color: #ea0014;
+  color: white;
+  padding: 10px;
+}
+
+#menubar {
+  background-color: #cecece;
+  color: white;
+  padding: 10px;
+}
+
+#footer {
+  background-color: #a5a5a5;
+  color: white;
+  padding: 10px;
+}
+
+#konten {
+  margin: 10px;
+  padding: 10px;
+}

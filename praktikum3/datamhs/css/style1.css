@@ -1,0 +1,52 @@
+header {
+  background-color: #ffffff;
+  color: #000000;
+  height: 100px;
+}
+header img {
+  float: left;
+  padding: 14px 0;
+}
+header ul {
+  float: right;
+}
+header ul li {
+  display: inline-block;
+}
+header ul li a {
+  padding: 35px 0 20px 15px;
+  display: inline-block;
+  font-size: 20px;
+}
+.section {
+  padding: 25px 0;
+}
+.box {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 10px 0 25px 0;
+}
+
+.table {
+  margin: 16px 0 25px 0;
+  width: 100%;
+}
+.table tbody tr td a {
+  text-align: center;
+}
+.table tr {
+  height: 30px;
+}
+.table tr td {
+  padding: 5px 10px;
+}
+.tambah {
+  padding: 8px 15px;
+  background-color: #97191d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
