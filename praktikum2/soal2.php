@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>soal2</title>
-</head>
-<body>
+<?php
+include "header.php";
+?>
+                <!-- Begin Page Content -->
+                <div style="color: black" class="container-fluid font-weight-bold">
     <p>
         Menampilkan bilangan bulat 5 s/d 100 yang berkelipatan 10
         <p>
@@ -49,5 +46,8 @@
             ?>
         </p>
     </p>
-</body>
-</html>
+
+    </div>
+<?php
+include "footer.php";
+?>

@@ -1,4 +1,9 @@
 <?php
+include "header.php";
+?>
+                <!-- Begin Page Content -->
+                <div style="color: black" class="container-fluid font-weight-bold">
+<?php
 // Jumlah lembar fotocopy
 $jumlahLembar = 168;
 
@@ -19,4 +24,9 @@ $totalBiaya = $jumlahLembar * $hargaPerLembar;
 
 // Menampilkan total biaya fotocopy
 echo "Biaya yang harus dibayarkan untuk fotocopy sebanyak $jumlahLembar lembar adalah Rp. $totalBiaya,-";
+?>
+
+</div>
+<?php
+include "footer.php";
 ?>

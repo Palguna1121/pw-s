@@ -2,34 +2,13 @@
 session_start();
 include 'db.php';
 if($_SESSION['status_login'] != true){
-    echo '<script>window.location="login.php"</script>';
+    echo '<script>window.location="auth/login.php"</script>';
 }
 ?>
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Mahasiswa</title>
-    <link rel="stylesheet" type="text/css" href="./css/style1.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- header -->
-    <header>
-        <div class="container">
-            <img src="./images/instiki-logo.png" width="200px">
-            <nav>
-                <ul>
-                    <li><a href="dashboard.php">Dashboard</a></li>
-                    <li><a href="profil.php">Profil</a></li>
-                    <li><strong><a href="matakuliah.php">Matakuliah</a></strong></li>
-                    <li><a href="tugas.php">Tugas</a></li>
-                    <li><a href="logout.php">| LOGOUT |</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+
+<?php
+include 'templates/header.php';
+?>
     <!-- content -->
     <section class="section">
         <div class="container">
@@ -41,7 +20,7 @@ if($_SESSION['status_login'] != true){
                         <tr>
                             <th width="60px">NO</th>
                             <th>MATAKULIAH</th>
-                            <th width="150px">AKSI</th>
+                            <th width="220px">AKSI</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -55,8 +34,9 @@ if($_SESSION['status_login'] != true){
                             <td align="center"><?php echo $no++ ?></td>
                             <td><?php echo $row['matkul_name'] ?></td>
                             <td align="center">
-                                <a href="editmatakuliah.php?id=<?php echo $row['matkul_id'] ?>">Edit</a> ||
-                                <a href="?hapus_id=<?php echo $row['matkul_id'] ?>" onclick="return confirm('Yakin ingin hapus?')">Hapus</a>
+                                <a href="edit-matakuliah.php?id=<?php echo $row['matkul_id'] ?>">Edit</a> ||
+                                <a href="tambah_tugas.php?matkul_id=<?php echo $row['matkul_id'] ?>" class="">Tambah Tugas</a> ||
+                                <!-- <a href="?hapus_id=<?php //echo $row['matkul_id'] ?>" onclick="return confirm('Yakin ingin hapus?')">Hapus</a> -->
                                 <?php 
                                     if(isset($_GET['hapus_id'])){
                                         $id_hapus = $_GET['hapus_id'];
@@ -81,12 +61,10 @@ if($_SESSION['status_login'] != true){
             </div>
         </div>
     </section>
-    <!-- footer -->
-    <footer>
-        <div class="container">
-            <small>Copyright &copy; 2021 - INSTITUT BISNIS DAN
-            TEKNOLOGI INDONESIA</small>
-        </div>
-    </footer>
-</body>
-</html>
+
+    
+<?php
+include 'templates/footer.php';
+?>
+
+

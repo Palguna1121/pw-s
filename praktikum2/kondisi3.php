@@ -1,4 +1,9 @@
 <?php
+include "header.php";
+?>
+                <!-- Begin Page Content -->
+                <div style="color: black" class="container-fluid font-weight-bold">
+<?php
 $nilai = 60;
 if($nilai >= 90){
  echo "Nilai Memuaskan";
@@ -9,4 +14,9 @@ if($nilai >= 90){
 }else{
  echo "Nilai Sangat Kurang";
 }
+?>
+
+</div>
+<?php
+include "footer.php";
 ?>

@@ -1,4 +1,9 @@
 <?php
+include "header.php";
+?>
+                <!-- Begin Page Content -->
+                <div style="color: black" class="container-fluid font-weight-bold">
+<?php
 
 // Membuat array asosiatif
 $buah = array(
@@ -54,4 +59,9 @@ if (array_key_exists("apel", $buah)) {
     echo "Kunci 'apel' tidak ada di dalam array";
 }
 
+?>
+
+</div>
+<?php
+include "footer.php";
 ?>

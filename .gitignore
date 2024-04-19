@@ -1,0 +1,6 @@
+*.git
+*.idea
+*.vscode
+praktikum2/vendor
+praktikum2/scss
+praktikum2/img

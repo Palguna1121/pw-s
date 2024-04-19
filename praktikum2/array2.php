@@ -1,4 +1,9 @@
 <?php
+include "header.php";
+?>
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+<?php
 $array1 = array ("Arman","Bayu","Feri"); echo"array awal
 ialah:<br/>";
 for ($i=0; $i<count($array1); $i++){
@@ -22,4 +27,9 @@ sort($array1);
 for ($i=0; $i<count($array1); $i++){
 echo"data ke-",$i," : ",$array1[$i],"<br/>";
 }
+?>
+
+</div>
+<?php
+include "footer.php";
 ?>

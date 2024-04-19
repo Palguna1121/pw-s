@@ -1,4 +1,9 @@
 <?php
+include "header.php";
+?>
+                <!-- Begin Page Content -->
+                <div style="color: black" class="container-fluid font-weight-bold">
+<?php
 $bln = date("M");
 switch($bln)
 {
@@ -28,4 +33,8 @@ case "Dec" : $namaBln = "Desember";
 break;
 }
 echo "Nama bulan sekarang adalah : ".$namaBln;
+?>
+                </div>
+<?php
+include "footer.php";
 ?>

@@ -1,4 +1,9 @@
 <?php
+include "header.php";
+?>
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+<?php
 $kelompok1 =
 array("Andi","Budi","Chika","David","Erna"); echo "Nama Mahasiswa
 Kelompok 1 :<br />";
@@ -15,4 +20,10 @@ echo "Nama Mahasiswa Kelompok 2 :<br />";
 for ($i=0; $i<=4; $i++){
 echo " - ",$kelompok2[$i],"<br/>";
 }
+
+?>
+
+</div>
+<?php
+include "footer.php";
 ?>

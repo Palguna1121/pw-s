@@ -1,4 +1,9 @@
 <?php
+include "header.php";
+?>
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+<?php
 function volume($luas,$tinggi){
 $volume = $luas * $tinggi;
 echo "Volume ialah : $volume cm";
@@ -14,4 +19,9 @@ echo "Panjang Persegi : $panjang cm<br />";
 echo "Lebar Persegi : $lebar cm<br/>";
 echo "Tinggi Persegi : $tinggi cm<br/><br/>";
 luas_persegi($panjang, $lebar, $tinggi);
+?>
+
+</div>
+<?php
+include "footer.php";
 ?>

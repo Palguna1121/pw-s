@@ -1,5 +1,5 @@
 <?php
-    require_once "db.php";
+    require_once "../db.php";
 
     session_start();
 ?>
@@ -10,7 +10,7 @@
         <meta charset="utf-8">
         <meta name="view port" content="width-device-width, initial-scale=1">
         <title>Login Data Mahasiswa</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
         <link
         href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
         rel="stylesheet">
@@ -23,6 +23,10 @@
                 <input type="password" name="pass" placeholder="Password" class="input-control">
                 <input type="submit" name="submit" value="Login" class="btn">
             </form>
+            <div class="box-register">
+                <p>Belum punya akun?</p>
+                <a href="register.php">Register</a>
+            </div>
             <?php
             if(isset($_POST['submit'])){
                 $user = $_POST['user'];
@@ -39,7 +43,7 @@
                     $_SESSION['a_global'] = $d;
                     $_SESSION['id'] = $d->admin_id;
                     echo
-                    '<script>window.location="dashboard.php"</script>';
+                    '<script>window.location="../index.php"</script>';
                 }else{
                     echo
                     '<script>alert("Username atau Password anda salah!")</script>';

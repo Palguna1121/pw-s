@@ -1,4 +1,10 @@
 <?php
+include "header.php";
+?>
+                <!-- Begin Page Content -->
+                <div style="color: black" class="container-fluid font-weight-bold">
+
+<?php
 echo "<h2>Operasi pada PHP</h2>";
 $a="6";
 $b="2.5";
@@ -27,3 +33,8 @@ echo $garis."<br>";
 echo $komentar. " di kampus ". $nama. "<br>Selamat Belajar
 Pemrograman Web <br>";
 echo $garis."<br>";
+?>
+                </div>
+<?php
+include "footer.php";
+?>
